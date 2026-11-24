@@ -31,6 +31,10 @@ export default function Footer() {
               <img
                 src="/imagenes/logo.webp"
                 alt="TOTAL KOMBAT Martial Arts Club"
+                width={384}
+                height={150}
+                loading="lazy"
+                decoding="async"
                 className="h-[68px] w-auto object-contain drop-shadow-[0_2px_14px_rgba(229,184,66,0.35)]"
               />
             </Link>
@@ -158,14 +162,20 @@ export default function Footer() {
                 {
                   src: "/imagenes/taekaso.webp",
                   alt: "Asociación de Taekwondo de Pichincha",
+                  width: 126,
+                  height: 80,
                 },
                 {
                   src: "/imagenes/taekfede.webp",
                   alt: "Federación Ecuatoriana de Taekwondo",
+                  width: 226,
+                  height: 80,
                 },
                 {
                   src: "/imagenes/samaso.webp",
                   alt: "Asociación de Sambo de Pichincha",
+                  width: 87,
+                  height: 80,
                 },
               ].map((logo) => (
                 <div
@@ -175,6 +185,10 @@ export default function Footer() {
                   <img
                     src={logo.src}
                     alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                    loading="lazy"
+                    decoding="async"
                     className="skew-x-[12deg] h-11 sm:h-12 w-auto max-w-[88px] object-contain transition-transform duration-200 group-hover:scale-105"
                   />
                 </div>
@@ -191,11 +205,6 @@ export default function Footer() {
       <div className="relative z-10 bg-[#050507]">
         <div className="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-3 px-4 py-3 sm:flex-row sm:px-6 lg:px-10 text-[12px] text-gray-300">
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <img
-              src="/images/logo-tk-shield.png"
-              alt="TK Escudo"
-              className="h-8 w-8 object-contain"
-            />
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 text-center">
               <Link
                 href="/nosotros#transparencia"

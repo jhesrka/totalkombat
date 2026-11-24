@@ -104,6 +104,10 @@ export default function DisciplinasSection() {
                   <img
                     src="/imagenes/disiplina1.webp"
                     alt="Taekwondo en TOTAL KOMBAT"
+                    width={372}
+                    height={264}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full max-w-[315px] sm:max-w-[335px] h-auto object-contain object-bottom drop-shadow-[0_12px_22px_rgba(0,0,0,0.95)] transition-transform duration-300 group-hover:scale-105 block align-bottom"
                   />
                 </motion.div>
@@ -160,6 +164,10 @@ export default function DisciplinasSection() {
                   <img
                     src="/imagenes/disiplina2.webp"
                     alt="Sambo en TOTAL KOMBAT"
+                    width={330}
+                    height={298}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full max-w-[205px] sm:max-w-[218px] h-auto object-contain object-bottom drop-shadow-[0_12px_22px_rgba(0,0,0,0.95)] transition-transform duration-300 group-hover:scale-105 block align-bottom"
                   />
                 </motion.div>

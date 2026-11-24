@@ -8,11 +8,16 @@ export default function TransparenciaSection() {
   const uid = useId().replace(/:/g, "_");
   const goldGradId = `transpGold-${uid}`;
 
-  const documentos = [
+  const documentos: { title: string; pdfUrl?: string; downloadName?: string }[] = [
     { title: "Estatutos\ndel Club" },
     { title: "Reglamento\nInterno" },
     { title: "Documentos\nLegales" },
     { title: "Resoluciones" },
+    {
+      title: "Registro de\nDirectorio",
+      pdfUrl: "/documentos/REGISTRO%20DIRECTORIO%20CLUB%202024.pdf",
+      downloadName: "REGISTRO DIRECTORIO CLUB 2024.pdf",
+    },
     { title: "Otros\nDocumentos" },
   ];
 
@@ -96,16 +101,20 @@ export default function TransparenciaSection() {
             </p>
           </motion.div>
 
-          {/* Right 5 Document Cards (8 cols) */}
-          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 pb-4 md:pb-3">
+          {/* Right 6 Document Cards (8 cols) */}
+          <div className="lg:col-span-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 pb-4 md:pb-3">
             {documentos.map((doc, idx) => (
               <motion.a
                 key={idx}
-                href={`https://wa.me/593987654321?text=${encodeURIComponent(
-                  `Hola TOTAL KOMBAT, solicito consultar el documento institucional: ${doc.title.replace("\n", " ")}`
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={
+                  doc.pdfUrl ??
+                  `https://wa.me/593987654321?text=${encodeURIComponent(
+                    `Hola TOTAL KOMBAT, solicito consultar el documento institucional: ${doc.title.replace("\n", " ")}`
+                  )}`
+                }
+                download={doc.downloadName}
+                target={doc.pdfUrl ? undefined : "_blank"}
+                rel={doc.pdfUrl ? undefined : "noopener noreferrer"}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}

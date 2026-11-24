@@ -1,0 +1,23 @@
+# TOTAL KOMBAT Martial Arts Club
+
+> Club deportivo especializado en la formación integral, recreativa y competitiva en Taekwondo y Sambo en Quito, Ecuador.
+
+## URL Oficial
+- https://totalkombat.vercel.app/
+
+## Rutas Principales
+- [Inicio](https://totalkombat.vercel.app/): Presentación del club, disciplinas Taekwondo y Sambo, formación por edades (niños, jóvenes, adultos y máster), beneficios y galería de experiencias.
+- [Nosotros](https://totalkombat.vercel.app/nosotros): Historia del club, misión, visión, valores institucionales y transparencia documental.
+- [Oferta Deportiva](https://totalkombat.vercel.app/oferta-deportiva): Detalle de Taekwondo y Sambo, modalidades y categorías, comparativa de disciplinas y planes mensuales (Plan Básico, Plan Intermedio y Plan Competitivo).
+- [Formación](https://totalkombat.vercel.app/formacion): Metodología de formación, escala oficial de cinturones de Taekwondo (10 Kup, 4 Poom, 9 Dan) y Sambo (Sistema oficial FIAS de 10 niveles), plan de entrenamiento y resultados.
+- [Inscripciones](https://totalkombat.vercel.app/inscripciones): Proceso de inscripción en 4 pasos, formulario de pre-inscripción por WhatsApp y beneficios.
+
+## Afiliaciones Oficiales
+- Asociación de Taekwondo de Pichincha
+- Federación Ecuatoriana de Taekwondo
+- Asociación de Sambo de Pichincha
+
+## Contacto Directo
+- Ubicación: Quito, Pichincha, Ecuador
+- WhatsApp: +593 98 765 4321
+- Correo: info@totalkombat.ec

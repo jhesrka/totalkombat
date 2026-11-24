@@ -3,8 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --font-montserrat: "Montserrat", "Arial Black", sans-serif;
-  --font-jakarta: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
   --kombat-black: #070709;
   --kombat-dark: #101116;
   --kombat-red: #dc141c;

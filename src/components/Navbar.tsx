@@ -50,6 +50,9 @@ export default function Navbar() {
             <img
               src="/imagenes/logo.webp"
               alt="TOTAL KOMBAT Martial Arts Club"
+              width={384}
+              height={150}
+              decoding="async"
               className="h-[54px] sm:h-[62px] md:h-[66px] w-auto object-contain drop-shadow-[0_2px_14px_rgba(229,184,66,0.42)]"
             />
           </Link>
@@ -126,6 +129,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-expanded={mobileOpen}
             className="lg:hidden inline-flex items-center justify-center rounded-lg border border-[#E5B842]/50 bg-[#121318] p-2 text-[#FCE38A] transition-colors hover:bg-[#1b1c24] cursor-pointer"
             aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
           >

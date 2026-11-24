@@ -25,15 +25,25 @@ export default function OfertaHeroSection() {
       ref={containerRef}
       className="relative flex min-h-[60vh] w-full items-end bg-[#050507] overflow-hidden border-b-2 border-[#E5B842]/60 select-none"
     >
-      {/* Fondo heroinicio.webp con Parallax Bidireccional */}
+      {/* Fondo heroinicio.webp con Parallax Bidireccional (descubrible para LCP) */}
       <motion.div
         style={{
           y: bgY,
           scale: bgScale,
-          backgroundImage: "url('/imagenes/heroinicio.webp')",
         }}
-        className="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
-      />
+        className="pointer-events-none absolute inset-0 will-change-transform"
+      >
+        <img
+          src="/imagenes/heroinicio.webp"
+          alt=""
+          aria-hidden="true"
+          width={1852}
+          height={677}
+          fetchPriority="high"
+          decoding="async"
+          className="h-full w-full object-cover object-center"
+        />
+      </motion.div>
 
       {/* Degradado inferior para perfecta unión visual */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050507]/40 via-transparent to-transparent" />
@@ -76,11 +86,10 @@ export default function OfertaHeroSection() {
             >
               <motion.span
                 variants={{
-                  hidden: { opacity: 0, y: 30, filter: "blur(6px)" },
+                  hidden: { opacity: 0, y: 30 },
                   visible: {
                     opacity: 1,
                     y: 0,
-                    filter: "blur(0px)",
                     transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
                   },
                 }}
@@ -90,12 +99,11 @@ export default function OfertaHeroSection() {
               </motion.span>
               <motion.span
                 variants={{
-                  hidden: { opacity: 0, y: 35, scale: 0.94, filter: "blur(8px)" },
+                  hidden: { opacity: 0, y: 35, scale: 0.94 },
                   visible: {
                     opacity: 1,
                     y: 0,
                     scale: 1,
-                    filter: "blur(0px)",
                     transition: { duration: 0.85, ease: [0.16, 1, 0.3, 1] },
                   },
                 }}
@@ -138,6 +146,8 @@ export default function OfertaHeroSection() {
               <img
                 src="/imagenes/personajeoferta.webp"
                 alt="Disciplinas de Alto Nivel en TOTAL KOMBAT"
+                fetchPriority="high"
+                decoding="async"
                 className="w-full max-w-[560px] lg:max-w-[610px] h-auto object-contain object-bottom select-none drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)] block align-bottom transition-all duration-500 hover:drop-shadow-[0_20px_45px_rgba(229,28,35,0.4)]"
               />
             </motion.div>

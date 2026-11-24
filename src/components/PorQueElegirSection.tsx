@@ -63,8 +63,12 @@ export default function PorQueElegirSection() {
               className="will-change-transform"
             >
               <img
-                src="/images/gym-dojang-framed.png"
+                src="/imagenes/nosotros1.webp"
                 alt="Gimnasio y Dojang Oficial TOTAL KOMBAT"
+                width={640}
+                height={427}
+                loading="lazy"
+                decoding="async"
                 className="w-full max-w-[640px] h-auto object-contain drop-shadow-[0_12px_28px_rgba(0,0,0,0.6)]"
               />
             </motion.div>

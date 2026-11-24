@@ -76,10 +76,15 @@ export default function InscripcionFormCard({
       <form onSubmit={handleSubmit} className="space-y-3">
         {/* 1. Nombre completo */}
         <div className="flex items-center rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 shadow-sm focus-within:border-[#D4951A] focus-within:ring-2 focus-within:ring-[#F3C652]/50">
-          <User className="h-4 w-4 text-gray-800 mr-2.5 shrink-0" />
+          <label htmlFor="inscripcion-nombre" className="sr-only">
+            Nombre completo
+          </label>
+          <User className="h-4 w-4 text-gray-800 mr-2.5 shrink-0" aria-hidden="true" />
           <input
+            id="inscripcion-nombre"
             type="text"
             required
+            aria-label="Nombre completo"
             placeholder="1. Nombre completo *"
             value={nombre}
             onChange={(e) => setNombre(e.target.value)}
@@ -89,12 +94,17 @@ export default function InscripcionFormCard({
 
         {/* 2. Edad */}
         <div className="flex items-center rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 shadow-sm focus-within:border-[#D4951A] focus-within:ring-2 focus-within:ring-[#F3C652]/50">
-          <Calendar className="h-4 w-4 text-gray-800 mr-2.5 shrink-0" />
+          <label htmlFor="inscripcion-edad" className="sr-only">
+            Edad
+          </label>
+          <Calendar className="h-4 w-4 text-gray-800 mr-2.5 shrink-0" aria-hidden="true" />
           <input
+            id="inscripcion-edad"
             type="number"
             min={3}
             max={99}
             required
+            aria-label="Edad"
             placeholder="2. Edad *"
             value={edad}
             onChange={(e) => setEdad(e.target.value)}
@@ -104,9 +114,14 @@ export default function InscripcionFormCard({
 
         {/* 3. Disciplina de interés */}
         <div className="flex items-center rounded-xl border border-gray-300 bg-white px-3.5 py-2.5 shadow-sm focus-within:border-[#D4951A] focus-within:ring-2 focus-within:ring-[#F3C652]/50">
-          <GraduationCap className="h-4 w-4 text-gray-800 mr-2.5 shrink-0" />
+          <label htmlFor="inscripcion-disciplina" className="sr-only">
+            Disciplina de interés
+          </label>
+          <GraduationCap className="h-4 w-4 text-gray-800 mr-2.5 shrink-0" aria-hidden="true" />
           <select
+            id="inscripcion-disciplina"
             required
+            aria-label="Disciplina de interés"
             value={disciplina}
             onChange={(e) => setDisciplina(e.target.value)}
             className="w-full bg-transparent text-[13.5px] sm:text-[14px] font-medium text-[#111216] focus:outline-none cursor-pointer"

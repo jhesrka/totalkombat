@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   title: "Oferta Deportiva | Taekwondo, Sambo, Categorías y Planes",
   description:
     "Conoce nuestras disciplinas de alto nivel: Taekwondo y Sambo en Quito. Modalidades para niños, jóvenes y adultos, formación básica, avanzada y planes mensuales.",
+  alternates: { canonical: "/oferta-deportiva" },
+  openGraph: {
+    title: "Oferta Deportiva | TOTAL KOMBAT Martial Arts Club",
+    description:
+      "Taekwondo y Sambo en Quito: modalidades por edades, niveles y planes mensuales.",
+    url: "https://totalkombat.vercel.app/oferta-deportiva",
+    images: [{ url: "/logo-og.png", width: 384, height: 150, alt: "TOTAL KOMBAT Logo Oficial" }],
+  },
 };
 
 export default function OfertaDeportivaPage() {

@@ -184,6 +184,8 @@ export default function BeneficiosFormacionSection() {
         <img
           src="/imagenes/ninoentrenador.webp"
           alt="Entrenamiento guiado con paos en TOTAL KOMBAT"
+          loading="lazy"
+          decoding="async"
           className="h-[220px] sm:h-[260px] lg:h-full w-full object-contain object-left-bottom select-none transition-transform duration-500 ease-out group-hover/beneficios:scale-[1.02]"
         />
       </motion.div>

@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   title: "Formación Deportiva | Metodología, Niveles y Cinturones",
   description:
     "Un proceso integral y profesional en Taekwondo y Sambo. Conoce nuestra metodología de formación, niveles desde cinturón blanco hasta competitivo y plan de entrenamiento.",
+  alternates: { canonical: "/formacion" },
+  openGraph: {
+    title: "Formación Deportiva | TOTAL KOMBAT Martial Arts Club",
+    description:
+      "Metodología de formación, escala oficial de cinturones en Taekwondo y Sambo y plan de entrenamiento.",
+    url: "https://totalkombat.vercel.app/formacion",
+    images: [{ url: "/logo-og.png", width: 384, height: 150, alt: "TOTAL KOMBAT Logo Oficial" }],
+  },
 };
 
 export default function FormacionPage() {

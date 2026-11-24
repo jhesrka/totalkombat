@@ -65,6 +65,10 @@ export default function CtaEmpiezaHoySection({
               <img
                 src="/imagenes/ninainscripcion.webp?v=2"
                 alt="Deportista TOTAL KOMBAT"
+                width={225}
+                height={150}
+                loading="lazy"
+                decoding="async"
                 className="relative z-10 h-[192px] xl:h-[202px] w-auto object-contain object-bottom select-none origin-bottom drop-shadow-[0_10px_24px_rgba(0,0,0,0.85)] transition-all duration-500 ease-out group-hover/athlete:scale-[1.03] group-hover/athlete:drop-shadow-[0_12px_35px_rgba(229,28,35,0.65)]"
               />
             </motion.div>

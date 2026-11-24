@@ -19,42 +19,42 @@ export default function ExperienciaCarouselSection() {
       id: 1,
       title: "Dojang Profesional",
       category: "Instalaciones",
-      image: "/images/exp-1.png",
+      image: "/imagenes/nosotros1.webp",
       alt: "Formación grupal en dojang TOTAL KOMBAT",
     },
     {
       id: 2,
       title: "Combate Taekwondo",
       category: "Sparring Olímpico",
-      image: "/images/exp-2.png",
+      image: "/imagenes/combat.webp",
       alt: "Combate competitivo de Taekwondo",
     },
     {
       id: 3,
       title: "Campeones y Medallas",
       category: "Logros Oficiales",
-      image: "/images/exp-3.png",
+      image: "/imagenes/logros.webp",
       alt: "Medallistas y entrenadores de TOTAL KOMBAT",
     },
     {
       id: 4,
       title: "Cinturones Negros",
       category: "Perfeccionamiento",
-      image: "/images/exp-4.png",
+      image: "/imagenes/trayectoria.webp",
       alt: "Equipo de cinturones avanzados y negros",
     },
     {
       id: 5,
       title: "Semillero Infantil",
       category: "Comunidad Infantil",
-      image: "/images/exp-5.png",
+      image: "/imagenes/participacion.webp",
       alt: "Comunidad infantil de artes marciales",
     },
     {
       id: 6,
       title: "Sambo y Sumisión",
       category: "Defensa Personal",
-      image: "/images/action-sambo.png",
+      image: "/imagenes/ninoentrenador.webp",
       alt: "Entrenamiento de Sambo en TOTAL KOMBAT",
     },
   ];
@@ -160,6 +160,10 @@ export default function ExperienciaCarouselSection() {
                     <img
                       src={item.image}
                       alt={item.alt}
+                      width={600}
+                      height={400}
+                      loading="lazy"
+                      decoding="async"
                       className="
                         w-full h-full object-cover object-center
                         transition-transform duration-500 ease-out

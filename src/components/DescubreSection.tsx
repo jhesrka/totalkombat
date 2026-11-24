@@ -142,8 +142,12 @@ export default function DescubreSection() {
             <div className="group relative w-full max-w-[650px] overflow-hidden rounded-2xl transition-all duration-500 hover:drop-shadow-[0_20px_40px_rgba(212,149,26,0.35)]">
               {/* Imagen del Dojang */}
               <img
-                src="/images/gym-dojang-framed.png"
+                src="/imagenes/nosotros1.webp"
                 alt="Instalaciones y tatami profesional de TOTAL KOMBAT"
+                width={650}
+                height={433}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-auto object-contain select-none transition-transform duration-700 ease-out group-hover:scale-[1.03]"
               />
 

@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   title: "Nosotros | Historia, Misión, Visión y Equipo Directivo",
   description:
     "Conoce TOTAL KOMBAT: nuestra historia, identidad institucional, misión, visión, valores, equipo técnico y transparencia institucional en Quito, Ecuador.",
+  alternates: { canonical: "/nosotros" },
+  openGraph: {
+    title: "Nosotros | TOTAL KOMBAT Martial Arts Club",
+    description:
+      "Conoce la historia, misión, visión y valores de TOTAL KOMBAT en Quito, Ecuador.",
+    url: "https://totalkombat.vercel.app/nosotros",
+    images: [{ url: "/logo-og.png", width: 384, height: 150, alt: "TOTAL KOMBAT Logo Oficial" }],
+  },
 };
 
 export default function NosotrosPage() {
@@ -23,17 +31,17 @@ export default function NosotrosPage() {
     {
       role: "Director General",
       sub: "(Club TOTAL KOMBAT)",
-      image: "/images/equipo-director-card.png",
+      image: "/imagenes/personajenosotros.webp",
     },
     {
       role: "Entrenadora",
       sub: "Taekwondo",
-      image: "/images/equipo-taekwondo-card.png",
+      image: "/imagenes/personaje1.webp",
     },
     {
       role: "Entrenador",
       sub: "Sambo",
-      image: "/images/equipo-sambo-card.png",
+      image: "/imagenes/personaje2.webp",
     },
   ];
 

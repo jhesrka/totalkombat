@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://totalkombat.ec";
+  const baseUrl = "https://totalkombat.vercel.app";
   const routes = [
     "",
     "/nosotros",
@@ -17,4 +17,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1.0 : 0.85,
   }));
 }
-

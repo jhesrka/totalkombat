@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   title: "Inscripciones | Haz Parte de TOTAL KOMBAT en Quito",
   description:
     "Inicia tu formación en Taekwondo y Sambo con un proceso de inscripción rápido, claro y seguro. Completa el formulario de 3 pasos y confirma tu cupo por WhatsApp.",
+  alternates: { canonical: "/inscripciones" },
+  openGraph: {
+    title: "Inscripciones | TOTAL KOMBAT Martial Arts Club",
+    description:
+      "Completa tu pre-inscripción en Taekwondo o Sambo en solo 3 pasos y confirma tu cupo por WhatsApp.",
+    url: "https://totalkombat.vercel.app/inscripciones",
+    images: [{ url: "/logo-og.png", width: 384, height: 150, alt: "TOTAL KOMBAT Logo Oficial" }],
+  },
 };
 
 export default function InscripcionesPage() {

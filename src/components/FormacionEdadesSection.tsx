@@ -123,6 +123,10 @@ export default function FormacionEdadesSection() {
                     <img
                       src="/imagenes/card_smoke.webp"
                       alt=""
+                      width={320}
+                      height={220}
+                      loading="lazy"
+                      decoding="async"
                       className="absolute inset-0 w-full h-full object-cover opacity-65 mix-blend-screen pointer-events-none"
                     />
 
@@ -145,6 +149,10 @@ export default function FormacionEdadesSection() {
                     <img
                       src={cat.image}
                       alt={cat.alt}
+                      width={350}
+                      height={360}
+                      loading="lazy"
+                      decoding="async"
                       className="
                         h-[195px] sm:h-[210px] xl:h-[224px] w-auto max-w-[98%] object-contain object-bottom
                         drop-shadow-[0_12px_24px_rgba(0,0,0,0.95)]

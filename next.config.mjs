@@ -8,6 +8,9 @@ const nextConfig = {
   outputFileTracingRoot: __dirname,
   compress: true,
   poweredByHeader: false,
+  experimental: {
+    inlineCss: true,
+  },
   images: {
     unoptimized: true,
   },
